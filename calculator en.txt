@@ -1,0 +1,31 @@
+#Project made by ***Iordache Christian Andrei***
+#Project made at date of 23/01/2024
+#Questions at e-mail addrres : iordache.christian.andrei@gmail.com
+#Github:chrand267
+#Arduino Project Hub:iftechspeaks
+#Project language is English
+#Project in Romanian on Github
+
+
+
+def calculator():
+    operatie = input("Pick math sign (+, -, *, /): ")
+    numar1 = float(input("First number: "))
+    numar2 = float(input("Second number: "))
+
+    if operatie == '+':
+        equal = numar1 + numar2
+    elif operatie == '-':
+        equal = numar1 - numar2
+    elif operatie == '*':
+        equal = numar1 * numar2
+    elif operatie == '/':
+        equal = numar1 / numar2
+    else:
+        print("Invalid operation.")
+        return
+
+    print(f"Is Equal To: {equal}")
+
+calculator()
+
